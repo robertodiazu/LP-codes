@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main(){
-  int x = 0;
+  int x = 1;
   switch(x){
     int x;
-    x = 1;
-    case 0:
+    x = -1;
+    case 1:
       x = 10;
       printf("%d\n",x);
       break;
-    case 1:
+    case -1:
       x = 11;
       printf("%d\n",x);
       break;
