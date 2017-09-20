@@ -1,13 +1,15 @@
 
 // Este es un código de ejemplo mostrando ámbito anidado y ocultamiento.
 //
-// En un ámbito estático, un lenguaje soporta ámbitos anidados si puede declararse
-// un ámbito dentro de otro. Al acceder una variable se buscará primero en el
-// ámbito más interno. De no encontrarse buscará en los ámbitos externos
+// En un ámbito estático, un lenguaje soporta ámbitos anidados si puede
+// declararse un ámbito dentro de otro. Al acceder una variable se buscará
+// primero en el ámbito más interno. De no encontrarse buscará en los ámbitos
+// externos
 //
-// Se puede decir que las variables en los ámbitos internos ocultan las variables
-// en los ámbitos externos pues no se puede acceder a éstas últimas desde el ámbito
-// más interno.
+// Se puede decir que las variables en los ámbitos internos ocultan las
+// variables en los ámbitos externos pues no se puede acceder a éstas últimas
+// desde el ámbito más interno.
+
 #include <iostream>
 
 int main(){
@@ -18,7 +20,6 @@ int main(){
     std::cout << x << "," << y << std::endl; // se accede al x más interno
   }
   // std::cout << x << "," << y << std::endl; //<-- error: y no fue declarada en este ámbito
-
   std::cout << x << std::endl;
 
   // bloques (while, for, if, switch) también tienen su propio ámbito
@@ -28,6 +29,12 @@ int main(){
 
     int x = 0;
     x++;
+    std::cout << x << std::endl;
+  }
+
+  for(x=0;x<5;x++){
+    std::cout << x << std::endl;
+    int x = 0;
     std::cout << x << std::endl;
   }
 
@@ -41,9 +48,9 @@ int main(){
   }
 
   switch(x){
-    int x;
+    int x; //solo permite declaración
     case 0:
-      x = 10;
+      x = 10; //inicialización al inicio de cada case, si no el compilador lanza un warning
       std::cout << x << std::endl;
       break;
     case 1:
@@ -55,10 +62,5 @@ int main(){
       std::cout << x << std::endl;
       break;
   }
-
-
-
-
-
   return 0;
 }
