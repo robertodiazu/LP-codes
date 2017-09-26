@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-#define ARRAY_SIZE 1
+#define ARRAY_SIZE 10000000
 
 int arreglo[ARRAY_SIZE] = {50};
 
