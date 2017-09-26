@@ -1,3 +1,11 @@
+/*
+Ejemplo de punteros y struct en C++
+Este ejemplo muestra una forma en que se pueden usar punteros y structs,
+como asignar memoria (con los operadores new y delete) y el uso del operador
+'->' para referenciar a miembros del struct apuntado por un puntero sin
+necesidad de usar el operador '*' para desreferenciar el puntero.
+*/
+
 #include <iostream>
 #include <cstdlib>
 

@@ -1,3 +1,9 @@
+/*
+Paso por referencia en C
+En este ejemplo se muestra que para pasar una variable a una funcion y que la
+funcion pueda modificarla se debe pasar como puntero
+*/
+
 #include <stdio.h>
 
 void swap(int *a, int *b){

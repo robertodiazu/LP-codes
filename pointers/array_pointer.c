@@ -1,3 +1,9 @@
+/*
+Ejemplo de punteros y arreglos en C
+Una variable de arreglo es basicamente un puntero constante apuntando a la
+primera posicion en memoria del arreglo
+*/
+
 #include <stdio.h>
 
 int main(){
@@ -8,12 +14,15 @@ int main(){
   pa = a; /* hace lo mismo que la linea anterior */
 
   int i;
-  for (i=0; i<10; i++) /* los tres for hacen lo mismo */
+  /* los tres for hacen lo mismo */
+  for (i=0; i<10; i++)
     printf("%d ",a[i]);
   printf("\n");
+
   for (i=0; i<10; i++)
     printf("%d ",*(pa+i));
   printf("\n");
+  
   for (i=0; i<10; i++)
     printf("%d ",*(a+i));
   printf("\n");
