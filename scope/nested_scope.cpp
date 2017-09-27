@@ -14,6 +14,7 @@
 
 int main(){
   int x = 2;
+  //estos bloques no estan soportados en C
   {
     int x = 3;
     int y = 2*x;
