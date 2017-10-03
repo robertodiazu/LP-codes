@@ -1,25 +1,15 @@
 #include <stdio.h>
 
 int main(){
-  int x = 1;
-  switch(x){
-    int x;
-    x = -1;
-    case 1:
-      x = 10;
-      printf("%d\n",x);
-      break;
-    case -1:
-      x = 11;
-      printf("%d\n",x);
-      break;
-    default:
-      x = 0;
-      printf("%d\n",x);
-      break;
+  int p,r = 0;
+  p = 0;
+  while(p < 5){
+    int r = 5;
+    printf("%d\n",r);
+
+    p++;
   }
-  printf("%d\n",x);
+  printf("%d\n",r);
 
   return 0;
-
 }
