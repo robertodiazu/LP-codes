@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void ejecutar(void (*fun)(int*),int *a){
-  fun(a);
+  (*fun)(a);
 }
 
 void sumarUno(int *a){
@@ -15,10 +15,10 @@ void restarUno(int *a){
 
 int main(){
   int a = 3;
-  ejecutar(sumarUno,&a);
+  ejecutar(&sumarUno,&a);
   printf("%d\n",a);
-  ejecutar(restarUno,&a);
-  ejecutar(restarUno,&a);
+  ejecutar(&restarUno,&a);
+  ejecutar(&restarUno,&a);
   printf("%d\n",a);
 
   return 0;
