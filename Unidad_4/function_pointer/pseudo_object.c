@@ -16,13 +16,16 @@ void _printObjeto(Objeto* self){
   printf("iMember = %d\n",self->iMember);
 }
 
-void _initObjeto(Objeto* no){
-  no->print = _printObjeto;
-  no->setiMember = _setiMember;
+Objeto newObjeto(){
+  Objeto no;
+  no.iMember = 0;
+  no.print = _printObjeto;
+  no.setiMember = _setiMember;
+  return no;
 }
 
 int main(){
-  Objeto o; _initObjeto(&o);
+  Objeto o = newObjeto(&o);
   o.setiMember(&o,3);
   o.print(&o);
 
