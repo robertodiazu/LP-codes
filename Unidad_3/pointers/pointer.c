@@ -11,6 +11,7 @@ int main(){
   j = 876;
   ptr2 = &j;
 
+
   printf("%d",*ptr2);
 
   return 0;

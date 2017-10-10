@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-void funcionMostrar(int a){
-  printf("%d\n",a);
-}
-
-void funcionMostrar(float a){
-  printf("%f\n");
-}
-
-// void funcionMostrar(void* a, int tipo){
-//   if(tipo == 0){
-//     printf("%d\n",*(int*)a);
-//   }else{
-//     printf("%f\n",*(double*)a);
-//   }
+// void funcionMostrar(int a){
+//   printf("%d\n",a);
 // }
+//
+// void funcionMostrar(float a){
+//   printf("%f\n");
+// }
+
+void funcionMostrar(void* a, int tipo){
+  if(tipo == 0){
+    printf("%d\n",*(int*)a);
+  }else{
+    printf("%f\n",*(double*)a);
+  }
+}
 
 int main(){
   int i = 5;

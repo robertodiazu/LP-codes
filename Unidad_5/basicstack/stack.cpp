@@ -8,7 +8,6 @@ Stack::Stack() { // constructor
 
 Stack::~Stack () {
   delete [] stackPtr;
-
 }
 
 void Stack::push (int number) {
@@ -19,10 +18,18 @@ void Stack::push (int number) {
 }
 
 void Stack::pop () {
-  topPtr--;
+  if( !this->empty() ){
+    topPtr--;
+  }else{
+    std::cerr << "Error en pop - stack esta vacío\n";
+  }
 }
 
 int Stack::top () {
+  /*if( this->empty() ){
+    std::cerr << "Error en top - stack esta vacío\n";
+    return 0;
+  }*/
   return stackPtr[topPtr];
 }
 
