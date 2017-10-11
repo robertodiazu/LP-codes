@@ -10,7 +10,7 @@ public:
   virtual void dibujar(void) = 0;
 };
 
-class Circulo {
+class Circulo : public Figura{
 protected:
   double radio;
 
@@ -31,13 +31,13 @@ public:
 
 };
 
-class Cuadrado {
+class Cuadrado : public Figura{
 protected:
   double lado;
   int rotacion;
 
 public:
-  Circulo(int x, int y, double lado){
+  Cuadrado(int x, int y, double lado){
     this->rotacion = 0;
     this->x = x;
     this->y = y;
@@ -50,23 +50,27 @@ public:
   }
 
   void dibujar(){
-    cout << "Dibujando cuadrado: []" << endl;
+    if( rotacion%90 == 0 )
+      cout << "Dibujando cuadrado: []" << endl;
+    else
+      cout << "Dibujando cuadrado: <>" << endl;
   }
-
 };
+
 
 int main(){
   Figura *f;
   //f = new Figura(); //error
 
   f = new Circulo(0,0,1.0);
-  f.rotar(30);
-  f.dibujar();
+  f->rotar(30);
+  f->dibujar();
   delete f;
 
   f = new Cuadrado(0,0,1.0);
-  f.rotar(45);
-  f.dibujar();
+  f->dibujar();
+  f->rotar(45);
+  f->dibujar();
   delete f;
 
   return 0;
