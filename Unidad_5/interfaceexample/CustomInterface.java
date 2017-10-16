@@ -1,7 +1,7 @@
 package interfaceexample;
 
 public interface CustomInterface {
-  void metodoAImplementar();
+  public void metodoAImplementar();
 
-  int otroMetodoMas(int nombreParametro);
+  public int otroMetodoMas(int nombreParametro);
 }

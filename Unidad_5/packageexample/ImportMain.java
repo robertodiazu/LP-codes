@@ -1,6 +1,6 @@
 package packageexample;
 
-import packageexample.uno.ClaseGlobal;
+import packageexample.uno.*;
 
 public class ImportMain {
   public static void main(String args[]){

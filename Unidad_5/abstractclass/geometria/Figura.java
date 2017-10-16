@@ -1,8 +1,13 @@
 package abstractclass.geometria;
 
-class Figura {
+public abstract class Figura {
   protected double x,y;
 
-  public abstract void rotar(int);
-  public abstract void dibujar(void);
+  public void trasladar(double ax, double ay){
+    x+= ax;
+    y+= ay;
+  }
+
+  public abstract void rotar(int g);
+  public abstract void dibujar();
 };

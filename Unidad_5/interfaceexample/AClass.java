@@ -1,16 +1,16 @@
 package interfaceexample;
 
-public class AClass {
+public class AClass implements CustomInterface {
 
   public void AClassMetodo(){
     return;
   }
 
-  void metodoAImplementar(){
+  public void metodoAImplementar(){
     System.out.println("metodoAImplementar() implementado en AClass");
   }
 
-  int otroMetodoMas(int nombreParametro){
+  public int otroMetodoMas(int nombreParametro){
     return 2*nombreParametro;
   }
 

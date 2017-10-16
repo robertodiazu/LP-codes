@@ -1,8 +1,10 @@
 package inheritance;
 
 class SubClase extends SuperClase{
+
   public void initMensaje(){
-    mensaje = "Hola Mundo";
+    super.initMensaje();    
+    mensaje += " y hola Edmundo inmundo";
   }
 
   public void addToMensaje(){

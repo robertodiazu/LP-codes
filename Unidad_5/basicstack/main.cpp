@@ -8,7 +8,7 @@ int main(){
   //s.topPtr++;
 
   cout << s.empty() << endl;
-  cout << s.top() << endl; 
+  cout << s.top() << endl;
 
   s.push(0);
   s.push(1);

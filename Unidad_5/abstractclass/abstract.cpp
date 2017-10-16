@@ -6,6 +6,7 @@ protected:
   double x,y;
 
 public:
+  virtual ~Figura(){};
   virtual void rotar(int) = 0;
   virtual void dibujar(void) = 0;
 };
@@ -20,6 +21,8 @@ public:
     this->y = y;
     this->radio = radio;
   }
+
+  ~Circulo(){}
 
   void rotar(int g) {
     //Rotar un circulo no hace nada
@@ -43,6 +46,8 @@ public:
     this->y = y;
     this->lado = lado;
   }
+
+  ~Cuadrado(){}
 
   void rotar(int g) {
     cout << "Rotando cuadrado " << g << " grados" << endl;

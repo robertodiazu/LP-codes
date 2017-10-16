@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Superclase{
+public class SuperClase{
   protected String mensaje = "";
 
   public String getMensaje(){

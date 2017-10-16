@@ -4,7 +4,7 @@ public class Herencia {
 
   public static void main(String[] args) {
     SuperClase sup = new SuperClase();
-    SubClase sub = new SubClase();a
+    SubClase sub = new SubClase();
     sup.initMensaje();
     sub.initMensaje();
     sub.addToMensaje();
@@ -12,5 +12,7 @@ public class Herencia {
     System.out.println( sup.getMensaje() );
     System.out.println( sub.getMensaje() );
 
+    sup = sub;
+    System.out.println( sup.getMensaje() );
   }
 }

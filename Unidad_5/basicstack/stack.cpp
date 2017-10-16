@@ -26,10 +26,10 @@ void Stack::pop () {
 }
 
 int Stack::top () {
-  /*if( this->empty() ){
+  if( this->empty() ){
     std::cerr << "Error en top - stack esta vacío\n";
     return 0;
-  }*/
+  }
   return stackPtr[topPtr];
 }
 

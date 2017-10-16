@@ -1,6 +1,6 @@
 package abstractclass.geometria;
 
-public class Circulo {
+public class Circulo extends Figura{
   protected double radio;
 
 public Circulo(int x, int y, double radio){
@@ -9,11 +9,11 @@ public Circulo(int x, int y, double radio){
     this.radio = radio;
   }
 
-  void rotar(int g) {
+  public void rotar(int g) {
     //Rotar un circulo no hace nada
   }
 
-  void dibujar(){
+  public void dibujar(){
     System.out.println("Dibujando circulo: O");
   }
 
