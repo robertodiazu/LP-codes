@@ -13,7 +13,9 @@ class Persona {
 }
 
 class Animal {
-  public String nombre;
+  private String nombre;
+
+  public Animal(){}
 
   public void setNombre(String nombre){
     this.nombre = nombre;
@@ -24,7 +26,7 @@ class Animal {
   }
 }
 
-class Main {
+class DefaultConstructor {
 
   public static void main(String[] args){
     // Persona p = new Persona();  //<- error: constructor Persona in class Persona cannot be applied to given types;

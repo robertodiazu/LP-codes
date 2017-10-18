@@ -4,6 +4,7 @@ class ClaseExterna  {
    int i = 0;
 
    public class ClaseInterna {
+
      ClaseInterna(){
        i++;
      }
@@ -19,7 +20,7 @@ class ClaseExterna  {
    }
 }
 
-public class Main {
+public class NestedClass {
 
    public static void main(String args[]) {
 

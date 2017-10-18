@@ -1,8 +1,7 @@
 package constructor;
 
 class Coordenadas {
-  private double x;
-  private double y;
+  private double x, y;
 
   private Coordenadas(){
 
@@ -16,17 +15,19 @@ class Coordenadas {
     Coordenadas c = new Coordenadas();
     c.x = x;
     c.y = y;
+    return c;
   }
 
   public static Coordenadas Polares(double angle, double radius){
     Coordenadas c = new Coordenadas();
     c.x = radius * Math.cos(angle);
     c.y = radius * Math.sin(angle);
+    return c;
   }
 
 };
 
-class Main {
+class PrivateConstructor {
 
   public static void main(String[] args){
     Coordenadas c1,c2;

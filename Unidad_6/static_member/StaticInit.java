@@ -26,12 +26,10 @@ class Primos {
   }
 }
 
-class Main{
-
+class StaticInit{
   public static void main(String[] args){
     for( int primo : Primos.PrimosConocidos ){
       System.out.println(primo);
     }
   }
-
 }
