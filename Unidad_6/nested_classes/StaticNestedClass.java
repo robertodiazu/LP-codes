@@ -23,8 +23,5 @@ public class StaticNestedClass {
       new ClaseExterna.ClaseInterna().print();
       new ClaseExterna.ClaseInterna().print();
       new ClaseExterna.ClaseInterna().print();
-
-
-
    }
 }
