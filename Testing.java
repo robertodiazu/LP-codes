@@ -20,10 +20,9 @@ class Testing {
     System.out.println(o1 == o2);
     System.out.println(o1.equals(o2));
 
-    //o2 = o1; 
+    //o2 = o1;
     System.out.println(o1.hashCode());
     System.out.println(o2.hashCode());
-
 
   }
 
