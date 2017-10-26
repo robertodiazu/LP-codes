@@ -4,7 +4,7 @@ class Finally{
 
   public static void main(String[] args){
 
-    int a = 0;
+    int a = 2;
 
     try{
       System.out.println("Entrando al try");
