@@ -25,8 +25,10 @@ public class ParamPass{
 
     Persona c = new Persona(), d;
     c.nombre = "Roberto";
+    c = new Persona();
 
     d = funcionPersona(c);
+
     System.out.println(c.nombre);
     System.out.println(d.nombre);
 
