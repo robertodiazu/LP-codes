@@ -24,3 +24,4 @@
 (st 'tope!)
 (st 'vacio?)
 (st 'pop!)
+(st 'pop?)
