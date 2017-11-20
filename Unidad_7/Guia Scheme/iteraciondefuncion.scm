@@ -5,6 +5,6 @@
     (if (<= i 0) val
         (iter (func val value) (- i 1)))))
 
-(iteracion + 3 -4)
+(iteracion + 3 4)
 
 (iteracion list '(1) 3)
