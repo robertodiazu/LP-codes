@@ -1,8 +1,8 @@
-#lang scheme
+#lang racket
 
 (define (repetidos lista)
   (let re ((res '()) (rep '()) (ls lista))
-    (cond [(null? ls) res rep]
+    (cond [(null? ls) (list res rep)]
           [(member (car ls) res)
            (if (member (car ls) rep)
                (re res rep (cdr ls))
