@@ -15,7 +15,7 @@ puzzle(A):-
     member(Nac1,[israel,australia,usa]),
     member(Nac2,[israel,australia,usa]),
     member(Nac3,[israel,australia,usa]),
-    not(Nom1 = Nom2), not(Nom2 = Nom3), not(Nom1 = Nom3),
-    not(Dep2 = Dep3),
-    not(Nac1 = Nac2), not(Nac2 = Nac3), not(Nac1 = Nac3),
+    Nom1 \= Nom2, Nom2 \= Nom3, Nom1 \= Nom3,
+    Dep2 \= Dep3,
+    Nac1 \= Nac2, Nac2 \= Nac3, Nac1 \= Nac3,
     member(A,PER).
