@@ -1,3 +1,3 @@
-codigo(4,Y):-Y=x,!.
-codigo(8,Y):-Y=y,!.
-codigo(_,Y):-Y=z,!.
+codigo(4,x):-!.
+codigo(8,y):-!.
+codigo(_,z).

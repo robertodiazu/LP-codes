@@ -1,14 +1,16 @@
-pareje(carlos,maria).
-pareje(felipe,juanita).
-pareja(X,Y):-pareje(X,Y).
-pareja(X,Y):-pareje(Y,X).
+pareja(carlos,maria).
+pareja(felipe,juanita).
+pareja(maria,carlos).
+pareja(juanita,felipe).
 
-hije(juanita,maria).
-hije(carlos,felipe).
-hije(andres,carlos).
-hije(pedro,felipe).
-hijo(X,Y):-hije(X,Y).
-hijo(X,Y):-pareja(Y,Z),hije(X,Z).
+hijo(juanita,maria).
+hijo(juanita,carlos).
+hijo(carlos,felipe).
+hijo(carlos,juanita).
+hijo(andres,carlos).
+hijo(andres,maria).
+hijo(pedro,felipe).
+hijo(pedro,juanita).
 
 hermano(X,Y):-hijo(X,Z),hijo(Y,Z),X\==Y.
 

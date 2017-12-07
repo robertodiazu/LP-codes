@@ -19,3 +19,9 @@ puzzle(A):-
     Dep2 \= Dep3,
     Nac1 \= Nac2, Nac2 \= Nac3, Nac1 \= Nac3,
     member(A,PER).
+
+es_el_australiano(X):-
+    puzzle(persona(X,_,_,australia)).
+
+deporte_de_richard(X):-
+    puzzle(persona(richard,_,X,_)).
