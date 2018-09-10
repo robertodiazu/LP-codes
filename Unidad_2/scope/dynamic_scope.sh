@@ -31,6 +31,8 @@ p2 () {
   echo "En p2: $x";
 }
 
+echo "En main: $x";
 p2;
 echo "En main: $x";
 p1;
+echo "En main: $x";
