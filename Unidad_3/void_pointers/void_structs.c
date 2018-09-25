@@ -3,7 +3,7 @@
 
 struct Foo {
   void *a;
-  int tipo; //quizas se mejor con un Enum
+  int tipo; //quizas sea mejor con un Enum
 };
 
 void mostrarDato(struct Foo f){

@@ -19,7 +19,7 @@ typedef struct nodo_t* enlace_t;
 int main(){
   enlace_t nodo;
   nodo = (enlace_t) malloc(sizeof(struct nodo_t));
-  // nodo = (struct nodo_t*) malloc(sizeof(struct nodo_t)); //equivalente
+  // nodo = (struct nodo_t*) malloc (sizeof(struct nodo_t)); //equivalente
 
   (*nodo).info = 3;
   printf("%d\n",(*nodo).info);

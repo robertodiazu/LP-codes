@@ -6,14 +6,14 @@ como asignar memoria (con los operadores new y delete) y el uso del operador
 necesidad de usar el operador '*' para desreferenciar el puntero.
 */
 
-#include <iostream>
+#include <cstdio>
 #include <cstdlib>
 
 struct nodo_t {
   int info;
   struct nodo_t* siguiente;
 };
-typedef struct nodo_t* enlace_t;
+typedef nodo_t* enlace_t;
 
 int main(){
   enlace_t nodo;
