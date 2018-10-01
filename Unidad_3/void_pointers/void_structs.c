@@ -19,7 +19,6 @@ void mostrarDato(struct Foo f){
       break;
     default:
       printf("Tipo no valido\n");
-
   }
 }
 
