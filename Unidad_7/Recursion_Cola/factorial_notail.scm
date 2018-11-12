@@ -2,13 +2,11 @@
 
 (define factorial
   (lambda (n)
-    (let fact ((i n))
-      (if (= i 0)
+      (if (= n 0)
         1
-        (* i (factorial (- i 1)))
+        (* n (factorial (- n 1)))
       )
     )
   )
-)
 
 (factorial 5)
