@@ -2,9 +2,9 @@ package exceptions;
 
 class Finally{
 
-  public static void main(String[] args){
+  public static void main(String[] args) throws Exception{
 
-    int a = 2;
+    int a = -1;
 
     try{
       System.out.println("Entrando al try");
@@ -23,7 +23,7 @@ class Finally{
       System.out.println("Manejando Exception");
       if( a == -1 ){
         System.out.println("Relanzando Exception");
-        throw new RuntimeException();
+        throw e;
       }
       if( a < -1 ){
         System.out.println("Retornando desde Exception");
