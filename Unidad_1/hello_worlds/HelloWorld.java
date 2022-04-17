@@ -1,10 +1,10 @@
 package hello_worlds;
 
-public class HelloWorld {
+/* Muestra Hola mundo por pantalla */
+
+class HolaMundo {
 
     public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
+        System.out.println("Hola mundo");
     }
-
 }

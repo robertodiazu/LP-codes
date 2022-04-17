@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main(){
-  std::cout << "hello world" << std::endl;
+// Muestra hola mundo por pantalla
 
+int main(){
+  std::cout << "Hola mundo" << std::endl;
   return 0;
 }

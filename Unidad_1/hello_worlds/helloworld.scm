@@ -1,3 +1,5 @@
-#lang scheme
+#lang scheme 
 
-"hello world"
+;; Muestra Hola mundo por pantalla
+
+(display "Hola mundo\n")

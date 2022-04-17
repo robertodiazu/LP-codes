@@ -1,1 +1,3 @@
-console.log("hello world")
+// Muestra Hola mundo por pantalla
+
+console.log("Hola mundo")
