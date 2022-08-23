@@ -1,0 +1,31 @@
+#lang scheme
+
+(define stream-car
+  (lambda (s) (car (force s))))
+
+(define stream-cdr
+  (lambda (s) (cdr (force s))))
+
+(define contadores
+  (let prox ((n 1))
+    (delay (cons n (prox (+ n 1))))))
+
+; Contador lazy encapsulado
+; Notar que lazy counter es una clausura pues el letrec retorna una función lambda que memoriza las variables prox, aux y cprox
+; prox es la función que define la promesa que guardara los resultados
+; cprox es la instanciación inicial de la promesa (y la que guardará de verdad los resultados
+; aux es una función que nos permite procesar dicha promesa
+
+(define lazycounter
+  (letrec(
+          [prox (lambda (n) (delay (cons n (prox (+ n 1)))))]
+          [aux (lambda (n a) (if (= n 0) (stream-car a) (aux (- n 1) (stream-cdr a))) ) ]
+          [cprox (prox 0)]
+          )
+    (lambda (n)
+      (aux n cprox)
+      )
+    )
+  )
+
+(lazycounter 6)

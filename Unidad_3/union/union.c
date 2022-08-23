@@ -26,21 +26,7 @@ int main(){
   strcpy(data.str, "C Programming"); // asignando a string
   printf("data.str: %s\n", data.str);
 
-  // Cabe notar que no se puede verificar el tipo que contiene la union y se
-  // pueden invocar los otros miembros como si estuvieran asignados
-  // Esto provoca que el lenguaje no pueda sea de tipificacion fuerte
-
-  data.i = 103; // Asignacion de entero
-  printf("data.i: %d\n", data.i);
-
-  // Se puede acceder igual al flotante, pero el entero 103 en representacion de
-  // punto flotante
   printf("data.f: %f\n", data.f);
-  // Aparece el entero 103 como representacion de caracter (g)
-  printf("data.str[0]: %c\n", data.str[0]);
-  // Aun se encuentra en memoria parte del string que no haya sido sobre-escrita
-  // por el entero
-  printf("data.str: %s\n", data.str+4);
 
   return 0;
 }

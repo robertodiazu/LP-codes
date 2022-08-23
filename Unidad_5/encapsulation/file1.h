@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+extern int vglobal;
+
 int hacerAlgunaCosa(int);
 
 int hacerOtraCosa(float);

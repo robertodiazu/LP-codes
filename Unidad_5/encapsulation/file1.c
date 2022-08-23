@@ -7,5 +7,5 @@ int hacerAlgunaCosa(int a){
 
 int hacerOtraCosa(float a){
   printf("%f\n",a);
-  return 2*a;
+  return vglobal*a;
 }

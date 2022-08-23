@@ -18,3 +18,4 @@ int main(){
   printf("%d\n",mcd(69,120));
   return 0;
 }
+

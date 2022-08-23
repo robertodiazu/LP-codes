@@ -17,6 +17,7 @@ int main(){
 
   using namespace uno;
   std::cout << flotanteGlobal << std::endl;
+  std::cout << enteroGlobal << std::endl;
 
   return 0;
 }

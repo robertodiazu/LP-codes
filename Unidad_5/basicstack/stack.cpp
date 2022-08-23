@@ -1,5 +1,9 @@
 #include "stack.hpp"
 
+int funcion(){
+  // el codigo
+}
+
 Stack::Stack() { // constructor
   stackPtr = new int [100];
   maxLen = 99;

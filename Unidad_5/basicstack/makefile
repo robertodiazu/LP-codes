@@ -1,13 +1,12 @@
-# makefile basico
 
-main: main.o stack.o
-	g++ -Wall main.o stack.o -o main.out
+main.out: main.o stack.o
+	g++ main.o stack.o -o main.out
 
-main.o: main.cpp stack.hpp
-	g++ -Wall -c main.cpp
+main.o: main.cpp
+	g++ -c main.cpp -o main.o
 
 stack.o: stack.cpp stack.hpp
-	g++ -Wall -c stack.cpp
+	g++ -c stack.cpp -o stack.o
 
 clean:
-	\rm -f *.out *.o
+	rm -f *.out *.o

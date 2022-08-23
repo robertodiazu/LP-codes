@@ -1,4 +1,2 @@
-
-% Muestra Hola mundo por pantalla
-
-main :- writeln('Hola mundo').
+:-initialization(main).
+main:- write('Hello world'), nl, halt.

@@ -5,7 +5,7 @@
 
 int hacerAlgunaCosa(int);
 
-float hacerOtraCosa(float);
+double hacerOtraCosa(float);
 
 
 #endif

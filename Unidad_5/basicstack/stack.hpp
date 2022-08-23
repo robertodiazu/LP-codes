@@ -3,6 +3,10 @@
 
 #include <iostream>
 
+
+int funcion();
+
+
 class Stack {
   private: /* no visibles para otros */
     int *stackPtr;
